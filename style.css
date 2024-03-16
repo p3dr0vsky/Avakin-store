@@ -11,8 +11,6 @@
 
 body, html{
     font-family: Fonte;
-    width: 100vw;
-    height: 100vh;
     overflow-x: hidden;
     background-color: #32337F;
     scroll-behavior: smooth;

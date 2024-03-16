@@ -18,6 +18,7 @@ body, html{
 
 header{
     background-color: #32337F;
+    width: 100vw;
 }
 
 header  span#logo img{

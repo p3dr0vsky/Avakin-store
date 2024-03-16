@@ -14,10 +14,27 @@
     <header id="header">
         <section id="Install">
             <span id="logo">
-                <img src="download.jpeg" alt="">
+                <a href="https://avakin.com/" target="_blank" rel="external"><img src="download.jpeg" alt=""></a>
             </span>
         </section>
-        <span onclick="ativar(), esconderH()" id="menu">
+        <menu id="Apps1">
+            
+            <section id="Giopas">
+                <span id="gp1">
+                    <a href="https://play.google.com/store/apps/details?id=com.lockwoodpublishing.avakinlife&amp;hl=en_GB&_xm=187640.327659893244821518" target="_blank" rel="external"><img src="Googleplay.svg" alt="Get it on Google Play"></a>
+                </span>
+                <span id="as1">
+                    <a href="https://apps.apple.com/gb/app/avakin-life-3d-avatar-creator/id740737088?_xm=187640.327659893244821518" target="_blank" rel="external"><img src="AppStore.svg" alt="Get it on App Store"></a>
+                </span>
+            </section>
+            <div id="button1">
+                <button onclick="ativarLogin()" id="login1">
+                    <ion-icon name="person-outline"></ion-icon>
+                    Log In
+                </button>
+            </div>
+        </menu>
+        <span onclick="ativar()" id="menu">
             <button onclick="animar()" id="btn-menu">
                 <span class="linha"></span>
                 <span class="linha"></span>
@@ -35,56 +52,56 @@
             
         </div>
         <span id="gp">
-            <img src="Googleplay.svg" alt="Get it on Google Play">
+            <a href="https://play.google.com/store/apps/details?id=com.lockwoodpublishing.avakinlife&amp;hl=en_GB&_xm=187640.327659893244821518" target="_blank" rel="external"><img src="Googleplay.svg" alt="Get it on Google Play"></a>
         </span>
         <span id="as">
-            <img src="AppStore.svg" alt="Get it on App Store">
+            <a href="https://apps.apple.com/gb/app/avakin-life-3d-avatar-creator/id740737088?_xm=187640.327659893244821518" target="_blank" rel="external"><img src="AppStore.svg" alt="Get it on App Store"></a>
         </span>
 
     </menu>
-    <main id="main">
+    <article id="deg">
         <section id="logoAvakin">
-            <picture id="imagemInicial">
-                <source id="imgg" media="(max-width: 700px)" srcset="avakim-logo.png" type="image/png">
-                <img src="imagem-inicioG.png" alt="">
-            </picture>
-        </section>
-        <section id="blb">
-            <section id="SelectCP">
-                <h1>Select your Crown pack</h1>
-            </section>
-            <svg id="visual" viewBox="0 0 450 600" width="450" height="600" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                <g transform="translate(248.18689706208795 302.80970025406106)">
-                    <path id="blob1"
-                        d="M87.4 -92C109.2 -65.5 120.1 -32.8 128.2 8.1C136.4 49 141.7 98.1 119.9 118.1C98.1 138.1 49 129 6.5 122.5C-36.1 116.1 -72.1 112.1 -109.6 92.1C-147.1 72.1 -186.1 36.1 -181.3 4.8C-176.5 -26.5 -128 -53 -90.5 -79.5C-53 -106 -26.5 -132.5 3.1 -135.6C32.8 -138.8 65.5 -118.5 87.4 -92"
-                        fill="#EEF266"></path>
-                </g>
-                <g transform="translate(246.13561618427417 301.032539149031)" style="visibility: hidden;">
-                    <path id="blob2"
-                        d="M120.2 -112.1C147 -93.3 154 -46.7 149.2 -4.8C144.3 37 127.7 74 100.8 98C74 122 37 133 4.5 128.5C-28 124 -56.1 104.1 -93.6 80.1C-131.1 56.1 -178 28 -189.8 -11.8C-201.6 -51.6 -178.2 -103.2 -140.7 -122C-103.2 -140.7 -51.6 -126.6 -2.5 -124.2C46.7 -121.7 93.3 -130.8 120.2 -112.1"
-                        fill="#EEF266"></path>
-                </g>
-            </svg>
-            <script>
-                const tween = KUTE.fromTo(
-                    '#blob1',
-                    { path: '#blob1' },
-                    { path: '#blob2' },
-                    { repeat: 999, duration: 3000, yoyo: true }
-                )
-
-                tween.start()
-            </script>
-        </section>
         
-        <script>
-            function animar(){
-                const btn = document.getElementById('btn-menu')
-                btn.classList.toggle('ativar')
-            }
-        </script>
-    </main>
+        </section>
+    </article>
+    <main id="main">
+        <section id="blbt">
+            <section id="blb">
+                <section id="SelectCP">
+                    <h1>Select your Crown pack</h1>
+                </section>
+                <svg id="visual" viewBox="0 0 450 600" width="450" height="600" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <g transform="translate(248.18689706208795 302.80970025406106)">
+                        <path id="blob1"
+                            d="M87.4 -92C109.2 -65.5 120.1 -32.8 128.2 8.1C136.4 49 141.7 98.1 119.9 118.1C98.1 138.1 49 129 6.5 122.5C-36.1 116.1 -72.1 112.1 -109.6 92.1C-147.1 72.1 -186.1 36.1 -181.3 4.8C-176.5 -26.5 -128 -53 -90.5 -79.5C-53 -106 -26.5 -132.5 3.1 -135.6C32.8 -138.8 65.5 -118.5 87.4 -92"
+                            fill="#4749ad"></path>
+                    </g>
+                    <g transform="translate(246.13561618427417 301.032539149031)" style="visibility: hidden;">
+                        <path id="blob2"
+                            d="M120.2 -112.1C147 -93.3 154 -46.7 149.2 -4.8C144.3 37 127.7 74 100.8 98C74 122 37 133 4.5 128.5C-28 124 -56.1 104.1 -93.6 80.1C-131.1 56.1 -178 28 -189.8 -11.8C-201.6 -51.6 -178.2 -103.2 -140.7 -122C-103.2 -140.7 -51.6 -126.6 -2.5 -124.2C46.7 -121.7 93.3 -130.8 120.2 -112.1"
+                            fill="#4749ad"></path>
+                    </g>
+                </svg>
+                <script>
+                    const tween = KUTE.fromTo(
+                        '#blob1',
+                        { path: '#blob1' },
+                        { path: '#blob2' },
+                        { repeat: 999, duration: 3000, yoyo: true }
+                    )
+                    tween.start()
+                </script>
+            </section>
+            
+            <script>
+                function animar(){
+                    const btn = document.getElementById('btn-menu')
+                    btn.classList.toggle('ativar')
+                }
+            </script>
+                </main>
+        </section>
     <form action="login" autocomplete="off" method="post" id="LogIn">
         <div onclick="fecharLogin()" id="close">
             <ion-icon name="close-outline"></ion-icon>
@@ -116,26 +133,30 @@
             Apps.style.display = 'block'
         }
     }
-    function esconderH() {
-        if (logo.style.display == 'none') {
-            logo.style.display = 'block'
-        } else {
-            logo.style.display = 'none'
-            menu.style.top = '2%'
-        }
-
-    }
     function ativarLogin(){
+        deg.style.display = 'none'
         main.style.display = 'none'
         header.style.display = 'none'
         Apps.style.display = 'none'
         LogIn.style.display = 'flex'
     }
     function fecharLogin(){
+        deg.style.display = 'flex'
         main.style.display = 'block'
         header.style.display = 'block'
-        Apps.style.display = 'block'
+        Apps.style.display = 'none'
         LogIn.style.display = 'none'
+        blb.style.display = 'flex'
+        SelectCP.style.display = 'flex'
+    }
+    function fecharLogin1(){
+        deg.style.display = 'flex'
+        main.style.display = 'block'
+        header.style.display = 'block'
+        Apps.style.display = 'none'
+        LogIn.style.display = 'none'
+        blb.style.display = 'flex'
+        SelectCP.style.display = 'flex'
     }
     function desbloquearTut(){
         if (tut.style.display == 'block') {

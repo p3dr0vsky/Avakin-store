@@ -15,11 +15,14 @@ body, html{
     height: 100vh;
     overflow-x: hidden;
     background-color: #32337F;
+    scroll-behavior: smooth;
 }
 
 header{
+    position: relative;
     background-color: #32337F;
     width: 100vw;
+    height: 80px;
 }
 
 header  span#logo img{
@@ -43,6 +46,7 @@ header  span#logo img{
     animation-name: menul;
     animation-duration: .2s;
     animation-timing-function: ease-in-out;
+    position: absolute;
     z-index: 2;
 }
 @keyframes menul{

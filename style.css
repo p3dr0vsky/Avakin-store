@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Fonte;
+    src: url(MadimiOne-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: Fonte;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #32337F;
+}
+
+header  span#logo img{
+    margin-left: 20px;
+    height: 80px;
+    width: 80px;
+}
+
+#menu{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    color: white;
+    font-size: 50px;
+}
+
+
+#Apps{
+    display: none;
+    background-color: #32337F; 
+    animation-name: menul;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+}
+@keyframes menul{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+#gp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#as{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#gp:hover{
+    transform: scale(0.95);
+}
+
+#as:hover{
+    transform: scale(0.95);
+}
+
+#login{
+    margin: 20px auto;
+    background-color: #32337F;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 1em;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+#login:hover{
+    color:  #32337F;
+    background-color: white;
+    transform: scale(0.95);
+}
+
+main{
+    background-image: linear-gradient( to bottom, #F25EA3, #2F3273, #F25EA3);
+    height: 300px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagemInicial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagemInicial img{
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 17%;
+    
+}
+
+.blob-motion{
+    
+    position: relative;
+    transform: translateY(-20%);
+}
+
+#blb{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SelectCP{
+    position: absolute;
+    display: block;
+    margin: auto;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.linha{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 1s ease;
+}
+button.ativar .linha:nth-child(1){
+    transform: translateY(7px) rotate(-45deg);
+}
+
+button.ativar .linha:nth-child(3){
+    transform: translateY(-7px) rotate(45deg);
+}
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+#LogIn{
+    display: none;
+    background-color: #18202C;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+#LogIn h1{
+    position: absolute;
+    top: 30px;
+    padding-top: 50px;
+    text-align: center;
+    color: yellow;
+}
+#LogIn input{
+    position: absolute;
+    top: 18%;
+    margin-top: 20px;
+    width: 350px;
+    height: 45px;
+    border: 2px solid white;
+    background-color: #18202C;
+    border-radius: 30px;
+    padding-left: 20px;
+    color: white;
+    font-size: 1em;
+    transition: .5s ease;
+}
+#LogIn input:focus{
+    outline: none;
+}
+#LogIn input:hover{
+    background-color: #253144;
+}
+
+#continuar{
+    position: absolute;
+    top: 30%;
+    background-color: #6DE78D;
+    color: #18202C;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    transition: .5s ease-in-out;
+}
+#continuar:hover{
+    scale: 0.95;
+}
+#close{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+    font-size: 2em;
+}
+
+#imgt{
+    display: block;
+    height: 500px;
+    width: 300px;
+    margin: auto;
+}
+#help{
+
+    color: white;
+    position: absolute;
+    top: 40%;
+}
+#helpi{
+    background-color: #DC4FA9;
+    border-radius: 50%;
+    color: white;
+    font-size: .7em;
+
+}
+#desb{
+    text-align: center;
+    cursor: pointer;
+}
+#H{
+    padding-left: 20px;
+}
+#H:hover{
+    color: #253144;
+}
+
+#tut{
+    display: none;
+    background-color: #18202C;
+    width: 100vw;
+    padding-bottom: 30px;
+    transition: .5s ease-in-out;
+}
+#tut p{
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 80vw;
+}

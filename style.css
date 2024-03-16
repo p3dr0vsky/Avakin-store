@@ -106,35 +106,36 @@ header  span#logo img{
 }
 
 main{
-    background-image: linear-gradient( to bottom, #F25EA3, #2F3273, #F25EA3);
-    height: 300px;
+    background-image: linear-gradient(to bottom,
+    );
+    height: 100vw;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#imagemInicial{
+#deg{
+    background-image: linear-gradient( to bottom, #2F3273, #16F2F2, #F25EA3, #32337F);
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#imagemInicial img{
+#logoAvakin{
+    background-image: url(avakim-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
     height: 200px;
-    display: block;
+    margin-top: -100px;
+}
+
+#blbt{
     position: absolute;
-    top: 17%;
-    
+    top: 30%;
 }
-
-.blob-motion{
-    
-    position: relative;
-    transform: translateY(-20%);
-}
-
 #blb{
-    position: absolute;
-    top: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,8 +143,10 @@ main{
 
 #SelectCP{
     position: absolute;
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
 }
 
 .flip {
@@ -181,8 +184,8 @@ button.ativar .linha:nth-child(2){
 #LogIn{
     display: none;
     background-color: #18202C;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -288,4 +291,104 @@ button.ativar .linha:nth-child(2){
     padding-top: 25px;
     padding-bottom: 20px;
     width: 80vw;
+}
+#Apps1{
+    display: none;
+}
+#button1{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+
+}
+
+#Giopas{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+}
+
+#Giopas > #gp1 :hover{
+    transform: scale(0.95);
+}
+
+#Giopas > #as1 :hover{
+    transform: scale(0.95);
+}
+
+#login1{
+    margin: 20px auto;
+    background-color: #32337F;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 1em;
+}
+#login1:hover{
+    color: #32337F;
+    background-color: white;
+    transform: scale(0.95);
+}
+@media screen and (min-width: 768px){
+    #logoAvakin{
+        background-image: url(imagem-inicioG.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 300px;
+    }
+    #deg{
+        background-image: linear-gradient( to bottom, #2F3273, #16F2F2, #F25EA3, #32337F);
+        height: 60vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #blbt{
+        position: absolute;
+        top: 40%;
+    }
+    #menu{
+        display: none;
+    }
+    #Apps{
+        display: none;
+    }
+    #Apps1{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #logoAvakin{
+        background-image: url(imagem-inicioG.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 400px;
+    }
+    #deg{
+        background-image: linear-gradient( to bottom, #2F3273, #16F2F2, #F25EA3, #32337F);
+        height: 80vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #blbt{
+        position: absolute;
+        top: 55%;
+    }
+    #Apps{
+        display: none;
+    }
+    #Apps1{
+        display: inline-block;
+    }
 }

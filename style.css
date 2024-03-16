@@ -44,7 +44,7 @@ header  span#logo img{
     display: none;
     background-color: #32337F; 
     animation-name: menul;
-    animation-duration: .2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     position: absolute;
     z-index: 2;

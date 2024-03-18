@@ -28,7 +28,7 @@
                 </span>
             </section>
             <div id="button1">
-                <button onclick="ativarLogin()" id="login1">
+                <button onclick="ativarLogin1()" id="login1">
                     <ion-icon name="person-outline"></ion-icon>
                     Log In
                 </button>
@@ -49,7 +49,6 @@
                 <ion-icon name="person-outline"></ion-icon>
                 Log In
             </button>
-            
         </div>
         <span id="gp">
             <a href="https://play.google.com/store/apps/details?id=com.lockwoodpublishing.avakinlife&amp;hl=en_GB&_xm=187640.327659893244821518" target="_blank" rel="external"><img src="Googleplay.svg" alt="Get it on Google Play"></a>
@@ -65,8 +64,6 @@
         </section>
     </article>
     <main id="main">
-        
-            
             <script>
                 function animar(){
                     const btn = document.getElementById('btn-menu')
@@ -76,6 +73,9 @@
     </main>
     <form action="login" autocomplete="off" method="post" id="LogIn">
         <div onclick="fecharLogin()" id="close">
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <div onclick="fecharLogin1()" id="close1">
             <ion-icon name="close-outline"></ion-icon>
         </div>
         <h1>Enter User Code</h1>
@@ -116,10 +116,8 @@
         deg.style.display = 'flex'
         main.style.display = 'block'
         header.style.display = 'block'
-        Apps.style.display = 'none'
+        Apps.style.display = 'block'
         LogIn.style.display = 'none'
-        blb.style.display = 'flex'
-        SelectCP.style.display = 'flex'
     }
     function fecharLogin1(){
         deg.style.display = 'flex'
@@ -127,8 +125,6 @@
         header.style.display = 'block'
         Apps.style.display = 'none'
         LogIn.style.display = 'none'
-        blb.style.display = 'flex'
-        SelectCP.style.display = 'flex'
     }
     function desbloquearTut(){
         if (tut.style.display == 'block') {
@@ -136,6 +132,12 @@
         } else {
             tut.style.display = 'block'
         }
+    }
+    function ativarLogin1(){
+        deg.style.display = 'flex'
+        main.style.display = 'flex'
+        header.style.display = 'flex'
+        LogIn.style.display = 'flex'
     }
 </script>
 

@@ -110,9 +110,6 @@ main{
     width: 100vw;
     height: 100vw;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #deg{
     background-image: linear-gradient( to bottom, #2F3273, #16F2F2, #F25EA3, #32337F);
@@ -141,14 +138,6 @@ main{
     #deg{
         height: 70vh;
     }
-}
-
-#SelectCP{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
 }
 
 button{
@@ -333,6 +322,78 @@ button.ativar .linha:nth-child(2){
     background-color: white;
     transform: scale(0.95);
 }
+#Sycp{
+    color: yellow;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 2em;
+}
+#boxes{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+#box{
+    background-image: linear-gradient(to bottom, #32337F, #0FDEEE
+, #DEE662, #F65D99);
+    height: 320px;
+    width: 160px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .5 ease-in-out;
+}
+#box:hover{
+    transform: scale(1.03);
+}
+#img{
+    height: 140px;
+}
+#price{
+    width: 130px;
+    padding: 15px;
+    color: white;
+    background: #32337F;
+    font-size: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .5s ;
+    margin-bottom: 15px;
+}
+#box h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+#price:hover{
+    transform: scale(0.95);
+}
+@keyframes animar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.mo{
+    animation-name: animar;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
 @media screen and (min-width: 768px){
     #logoAvakin{
         background-image: url(imagem-inicioG.png);
@@ -479,6 +540,55 @@ button.ativar .linha:nth-child(2){
         right: 3%;
         color: white;
         font-size: 2em;
+    }
+    #boxes{
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70vw;
+        margin: auto;
+    }
+    #box{
+        background-image: linear-gradient(to bottom, #32337F, #0FDEEE
+    , #DEE662, #F65D99);
+        height: 350px;
+        width: 220px;
+        margin: 10px 10px;
+        box-shadow: 0px 0px 15px 0px black;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: .5 ease-in-out;
+    }
+    #box:hover{
+        transform: scale(1.03);
+    }
+    #img{
+        height: 190px;
+    }
+    #price{
+        width: 130px;
+        padding: 15px;
+        color: white;
+        background: #32337F;
+        font-size: 1.5em;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out .5s ;
+    }
+    #box h1{
+        font-size: 2em;
+        color: white;
+        text-align: center;
+    }
+    #price:hover{
+        transform: scale(0.95);
     }
 }
 

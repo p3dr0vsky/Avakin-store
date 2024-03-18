@@ -35,6 +35,7 @@ header  span#logo img{
     right: 5%;
     color: white;
     font-size: 50px;
+    z-index: 999;
 }
 
 
@@ -106,8 +107,7 @@ header  span#logo img{
 }
 
 main{
-    background-image: linear-gradient(to bottom,
-    );
+    width: 100vw;
     height: 100vw;
     z-index: 1;
     display: flex;
@@ -128,17 +128,19 @@ main{
     background-size: contain;
     width: 100vw;
     height: 200px;
-    margin-top: -100px;
 }
-
-#blbt{
-    position: absolute;
-    top: 30%;
-}
-#blb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-height: 300px) {
+    #logoAvakin{
+        background-image: url(avakim-logo.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 150px;
+    }
+    #deg{
+        height: 70vh;
+    }
 }
 
 #SelectCP{
@@ -149,9 +151,6 @@ main{
     font-size: 1.3em;
 }
 
-.flip {
-    transform: rotate(180deg);
-}
 button{
     width: 35px;
     height: 35px;
@@ -247,7 +246,9 @@ button.ativar .linha:nth-child(2){
     color: white;
     font-size: 2em;
 }
-
+#close1{
+    display: none;
+}
 #imgt{
     display: block;
     height: 500px;
@@ -349,10 +350,6 @@ button.ativar .linha:nth-child(2){
         justify-content: center;
         align-items: center;
     }
-    #blbt{
-        position: absolute;
-        top: 40%;
-    }
     #menu{
         display: none;
     }
@@ -361,6 +358,127 @@ button.ativar .linha:nth-child(2){
     }
     #Apps1{
         display: inline-block;
+    }
+    #LogIn{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #18202C;
+        width: 500px;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 20px;
+        z-index: 999;
+        overflow-y: scroll;
+    }
+    
+    #LogIn h1{
+        position: absolute;
+        top: 30px;
+        padding-top: 50px;
+        text-align: center;
+        color: yellow;
+    }
+    #LogIn input{
+        position: absolute;
+        top: 23%;
+        margin-top: 20px;
+        width: 350px;
+        height: 45px;
+        border: 2px solid white;
+        background-color: #18202C;
+        border-radius: 30px;
+        padding-left: 20px;
+        color: white;
+        font-size: 1em;
+        transition: .5s ease;
+    }
+    #LogIn input:focus{
+        outline: none;
+    }
+    #LogIn input:hover{
+        background-color: #253144;
+    }
+    
+    #continuar{
+        position: absolute;
+        top: 40%;
+        background-color: #6DE78D;
+        color: #18202C;
+        border-radius: 30px;
+        border: none;
+        padding: 20px;
+        width: 250px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        transition: .5s ease-in-out;
+    }
+    #continuar:hover{
+        scale: 0.95;
+    }
+    #close{
+        display: none;
+    }
+    
+    #imgt{
+        display: block;
+        height: 500px;
+        width: 300px;
+        margin: auto;
+    }
+    #help{
+        color: white;
+        position: absolute;
+        top: 55%;
+    }
+    #helpi{
+        background-color: #DC4FA9;
+        border-radius: 50%;
+        color: white;
+        font-size: .7em;
+    }
+    #desb{
+        text-align: center;
+        cursor: pointer;
+    }
+    #H{
+        padding-left: 20px;
+    }
+    #H:hover{
+        color: #253144;
+    }
+    
+    #tut{
+        display: none;
+        background-color: #18202C;
+        width: 500px;
+        padding-bottom: 30px;
+        transition: .5s ease-in-out;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #tut p{
+        display: block;
+        margin: auto;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        width: 30vw;
+    }
+    #close1{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        color: white;
+        font-size: 2em;
     }
 }
 
@@ -381,14 +499,131 @@ button.ativar .linha:nth-child(2){
         justify-content: center;
         align-items: center;
     }
-    #blbt{
-        position: absolute;
-        top: 55%;
-    }
     #Apps{
         display: none;
     }
     #Apps1{
         display: inline-block;
+    }
+    #LogIn{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #18202C;
+        width: 500px;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 20px;
+        z-index: 999;
+        overflow-y: scroll;
+    }
+    
+    #LogIn h1{
+        position: absolute;
+        top: 30px;
+        padding-top: 50px;
+        text-align: center;
+        color: yellow;
+    }
+    #LogIn input{
+        position: absolute;
+        top: 23%;
+        margin-top: 20px;
+        width: 350px;
+        height: 45px;
+        border: 2px solid white;
+        background-color: #18202C;
+        border-radius: 30px;
+        padding-left: 20px;
+        color: white;
+        font-size: 1em;
+        transition: .5s ease;
+    }
+    #LogIn input:focus{
+        outline: none;
+    }
+    #LogIn input:hover{
+        background-color: #253144;
+    }
+    
+    #continuar{
+        position: absolute;
+        top: 40%;
+        background-color: #6DE78D;
+        color: #18202C;
+        border-radius: 30px;
+        border: none;
+        padding: 20px;
+        width: 250px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        transition: .5s ease-in-out;
+    }
+    #continuar:hover{
+        scale: 0.95;
+    }
+    #close{
+        display: none;
+    }
+    
+    #imgt{
+        display: block;
+        height: 500px;
+        width: 300px;
+        margin: auto;
+    }
+    #help{
+        color: white;
+        position: absolute;
+        top: 55%;
+    }
+    #helpi{
+        background-color: #DC4FA9;
+        border-radius: 50%;
+        color: white;
+        font-size: .7em;
+    }
+    #desb{
+        text-align: center;
+        cursor: pointer;
+    }
+    #H{
+        padding-left: 20px;
+    }
+    #H:hover{
+        color: #253144;
+    }
+    
+    #tut{
+        display: none;
+        background-color: #18202C;
+        width: 500px;
+        padding-bottom: 30px;
+        transition: .5s ease-in-out;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #tut p{
+        display: block;
+        margin: auto;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        width: 30vw;
+    }
+    #close1{
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        color: white;
+        font-size: 2em;
     }
 }

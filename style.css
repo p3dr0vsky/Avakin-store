@@ -547,7 +547,7 @@ button.ativar .linha:nth-child(2){
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 70vw;
+        width: 60vw;
         margin: auto;
     }
     #box{

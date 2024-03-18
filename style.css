@@ -11,7 +11,7 @@
 
 body, html{
     font-family: Fonte;
-    overflow-x: hidden;
+    overflow-x: none;
     background-color: #32337F;
     scroll-behavior: smooth;
 }

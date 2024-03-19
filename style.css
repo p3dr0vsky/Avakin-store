@@ -399,13 +399,14 @@ button.ativar .linha:nth-child(2){
         width: 95vw;
     }
     #Sycp{
+        padding-top: 20px;
         font-size: 1.7em;
     }
     #deg{
-        height: 40vh;
+        height: 160px;
     }
     #logoAvakin{
-        height: 200px;
+        height: 150px;
     }
     #box{
         width: 130px;

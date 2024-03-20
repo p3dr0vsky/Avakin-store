@@ -161,10 +161,161 @@
                     <button onclick="ativarLogin()" id="price">€99.99</button>
                 </div>
         </section>
+        <section id="EFAQ">
+            <section id="FAQ">
+                <h1>FAQ</h1>
+                <div>
+                    <h2 onclick="mostrarTxt()">How do I get a User Code?</h2>
+                        <p id="txtE">
+                            To find your User Code, launch Avakin Life and tap ‘Settings’. Go to your ‘Account’ and tap the box which says ‘User Code’ to copy it. You can then enter this on the online store to receive your Avacoins or Crowns directly to your account.
+                            <br>
+                            The User Code is unique to the online store and the only way to receive your purchase. If you have incorrectly entered your code, the purchase has been completed, and you have not received your Avacoins or Crowns – please contact Player Support inside the app or at Avakin.com/support. 
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt1()">I bought a pack, why has my balance not updated?</h2>
+                        <p id="txtE1">
+                            It can take a moment for currency packs to be added to your balance. If it doesn't appear, please try closing Avakin Life and reopening it. When you log back in, your Avacoins or Crowns should be there waiting for you!
+                            <br>
+                            To add more Avacoins and Crowns to your account it is ESSENTIAL to use a User Code and NOT enter your Friend Code.
+                            <br>
+                            To find your User Code, launch Avakin Life and tap ‘Settings’. Go to your ‘Account’ and tap the box which says ‘User Code’ to copy it. You can then enter this on the online store to receive your Avacoins or Crowns directly to your account.
+                            <br>
+                            The User Code is unique to the online store and the only way to receive your purchase. If you have incorrectly entered your code, the purchase has been completed, and you have not received your Avacoins or Crowns – please contact Player Support inside the app or at Avakin.com/support.
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt2()">How do I make sure I’m using a User Code and not a Friend Code?</h2>
+                        <p id="txtE2">
+                            To make sure you are using a User Code and not a Friend Code, first you must locate your User Code. To do this, launch Avakin Life and tap ‘Settings’. Go to your ‘Account’ and tap the box which says ‘User Code’ to copy it. You can then enter this on the online store to receive your Avacoins or Crowns directly to your account.
+                            <br>
+                            It is <strong>ESSENTIAL</strong> to generate a User Code and NOT enter your Friend Code.
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt3()">Why was my purchase cancelled?</h2>
+                        <p id="txtE3">
+                            There are a few reasons a purchase may get cancelled:
+                            <br>
+                            1. Incorrect payment details were entered.
+
+                            Using the wrong expiry date, cvv, billing address, name, etc. will stop your payment.
+                            <br>
+                            2. The purchase method you are using doesn't match your location.
+
+                            If you are using a VPN it may give you some trouble at checkout. Try turning it off while you purchase your package.
+                            <br>
+                            3. Your purchase triggered an Anti-Fraud measure.
+
+                            This is normal with a new store and is there to protect both you and us from fraud.
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt4()">I bought a pack, why has my balance not updated?</h2>
+                        <p id="txtE4">
+                            It can take a moment for currency packs to be added to your balance. If it doesn't appear, please try closing Avakin Life and reopening it. When you log back in, your Avacoins or Crowns should be there waiting for you!
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt5()">How can I reach support or get help in case I need it?</h2>
+                        <p id="txtE5">
+                            If you have any questions or issues, please don't hesitate to reach out to Lockwood Publishing support team! You can contact the support team from within Avakin Life game by selecting the "Contact support" button inside the settings menu. We are always happy to help!
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt6()">What is Xsolla?</h2>
+                        <p id="txtE6">
+                            Xsolla is the company that helped us build and run the Avakin Life online store! Xsolla will be referenced in your email receipts and a few other places. If you need any help with your Avakin Life online store purchases, it is best to contact Lockwood Publishing support team using an in-game ticket!
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt7()">What about security?</h2>
+                        <p id="txtE7">
+                            Xsolla is utilized by many developers in the industry and comes with top of the line security. Xsolla works as a payment gateway connecting you with the payment methods you know and trust! This way you can feel safe knowing where your info is going and that it's confidential and protected.
+                        </p>
+                </div>
+                <div>
+                    <h2 onclick="mostrarTxt8()">Do I need an account in order to make a purchase?</h2>
+                        <p id="txtE8">
+                            There is no need to create a special account - purchasing Avakin Life currency packages here is as simple as can be - you just need to insert your ID when requested, and then proceed with filling out the payment information. Please make sure you've entered the correct ID!
+                        </p>
+                </div>
+            </section>
+        </section>
+        <footer id="footer">
+            <img id="logos" src="ALKWD.png" alt="">
+            <div id="external">
+                <a href="https://xsolla.com/mobile-web-shop?utm_source=webshop&utm_medium=footer&_xm=187640.327659893244821518" target="_blank" rel="external"><img id="Xsolla" src="Screen Shot 2024-03-20 at 16.40.22.png" alt=""></a>
+                <a href="https://influencer.xsolla.com/?utm_source=sitebuilder&utm_medium=footer_affiliate_link&utm_campaign=308197&utm_content=199663&utm_term=187640&_xm=187640.327659893244821518" target="_blank" rel="external"><img id="join" src="Screen Shot 2024-03-20 at 16.53.02.png" alt=""></a>
+            </div>
+        </footer>
         <script>
             function animar(){
                 const btn = document.getElementById('btn-menu')
                 btn.classList.toggle('ativar')
+            }
+            function mostrarTxt(){
+                if (txtE.style.display == 'block'){
+                    txtE.style.display = 'none'
+                }else{
+                    txtE.style.display = 'block'
+                }
+            }
+            function mostrarTxt1(){
+                if (txtE1.style.display == 'block'){
+                    txtE1.style.display = 'none'
+                }else{
+                    txtE1.style.display = 'block'
+                }
+            }
+            function mostrarTxt2(){
+                if (txtE2.style.display == 'block'){
+                    txtE2.style.display = 'none'
+                }else{
+                    txtE2.style.display = 'block'
+                }
+            }
+            function mostrarTxt3(){
+                if (txtE3.style.display == 'block'){
+                    txtE3.style.display = 'none'
+                }else{
+                    txtE3.style.display = 'block'
+                }
+            }
+            function mostrarTxt4(){
+                if (txtE4.style.display == 'block'){
+                    txtE4.style.display = 'none'
+                }else{
+                    txtE4.style.display = 'block'
+                }
+            }
+            function mostrarTxt5(){
+                if (txtE5.style.display == 'block'){
+                    txtE5.style.display = 'none'
+                }else{
+                    txtE5.style.display = 'block'
+                }
+            }
+            function mostrarTxt6(){
+                if (txtE6.style.display == 'block'){
+                    txtE6.style.display = 'none'
+                }else{
+                    txtE6.style.display = 'block'
+                }
+            }
+            function mostrarTxt7(){
+                if (txtE7.style.display == 'block'){
+                    txtE7.style.display = 'none'
+                }else{
+                    txtE7.style.display = 'block'
+                }
+            }
+            function mostrarTxt8(){
+                if (txtE8.style.display == 'block'){
+                    txtE8.style.display = 'none'
+                }else{
+                    txtE8.style.display = 'block'
+                }
             }
         </script>
     </main>
@@ -208,6 +359,7 @@
         header.style.display = 'none'
         Apps.style.display = 'none'
         LogIn.style.display = 'flex'
+
     }
     function fecharLogin(){
         deg.style.display = 'flex'
@@ -231,9 +383,9 @@
         }
     }
     function ativarLogin1(){
-        deg.style.display = 'flex'
-        main.style.display = 'flex'
-        header.style.display = 'flex'
+        deg.style.display = 'block'
+        main.style.display = 'block'
+        header.style.display = 'block'
         LogIn.style.display = 'flex'
     }
 </script>
